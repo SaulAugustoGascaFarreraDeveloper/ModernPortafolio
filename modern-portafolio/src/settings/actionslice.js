@@ -14,10 +14,10 @@ export const Actionslice = createSlice({
             state.darkmode = action.payload
         },
         startmodeEngin: (state,action) => {
-            state.darkmode = action.payload
+            state.startmode = action.payload
         },
         musicmodeEngin: (state,action) => {
-            state.darkmode = action.payload
+            state.musicmode = action.payload
         },
     }
 
