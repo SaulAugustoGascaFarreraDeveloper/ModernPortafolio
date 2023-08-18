@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import StarsCanvas from '../Starts'
 import { Typewriter } from 'react-simple-typewriter'
 import About from '../About'
@@ -6,6 +6,29 @@ import About from '../About'
 type Props = {}
 
 const Main = (props: Props) => {
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("slideleft");
+        } else {
+          entry.target.classList.remove("slideleft");
+        }
+      });
+    });
+
+    const hiddenElements = document.querySelectorAll("section");
+
+    hiddenElements.forEach((el) => observer.observe(el));
+  }, []);
+
+
+
+
+
+
+
   return (
 
     <div className={`w-full h-[93vh]`}>
