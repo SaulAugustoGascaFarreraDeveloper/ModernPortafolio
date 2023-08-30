@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import StarsCanvas from '../Starts'
 import { Typewriter } from 'react-simple-typewriter'
 import About from '../About'
+import Skills from '../Skills'
 
 type Props = {}
 
@@ -69,6 +70,7 @@ const Main = (props: Props) => {
                 </div>
               </section>
               <About />
+              <Skills />
         </div>
     </div>
     

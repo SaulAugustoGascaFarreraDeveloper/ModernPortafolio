@@ -54,9 +54,6 @@ const About = (props: Props) => {
               actualmente me encuentro estudiando la Maestría en Desarrollo y Programación para Videojuegos en{" "} 
               <span className=" text-cyan-500">Coco School México</span> 2023-2025.{" "}
               
-             
-
-              Los idiomas que hablo son Español <span className='text-rose-600'> 100% </span> e Inglés <span className='text-rose-600'> 50% </span>.
 
           </motion.p>
 
